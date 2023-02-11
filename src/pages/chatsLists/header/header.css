@@ -1,0 +1,38 @@
+.sidebar-header{
+  position: relative;
+  width: 100%;
+  height: 59px;
+  background-color:rgb(59, 59, 59);
+  overflow: hidden;  
+  
+  
+}
+.sidebar-header > div {
+  position: relative;
+ 
+  height: 100%;
+
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  padding-top:10px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.badge-header-sidebar{
+  position: relative;
+  display: flex;
+  
+}
+
+.text-header  ,.icon-header{
+  padding-top: 5px;
+  padding-left: 10px;
+  align-items: center;
+  font-size: 20px;
+}
+.icon-panel{
+  background-color: azure;
+  border-radius: 55px;
+}

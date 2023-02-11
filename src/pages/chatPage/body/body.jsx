@@ -1,14 +1,14 @@
 import React from "react";
 
-const Body = () => {
+const ChatPageBody = () => {
   return (
     <div className="body">
       <div className="copybale-area">
         {/*  one div is missing */}
         <div className="conversion-panel-messages">
-        <div class="_38vwC yTWyz">
-          <div class="_1DlhQ _1JCqN">
-            <div class="_35lRO">
+        <div className="_38vwC yTWyz">
+          <div className="_1DlhQ _1JCqN">
+            <div className="_35lRO">
               <div>
                 Use WhatsApp on your phone to see older messages from before 21/10/2022.
               </div>
@@ -23,4 +23,4 @@ const Body = () => {
     </div>
   )
 }
-export default Body;
+export default ChatPageBody;

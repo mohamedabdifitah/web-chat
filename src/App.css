@@ -9,3 +9,9 @@
   top: 0;
   left: 0;
 }
+.flex1{
+  flex: 1;
+}
+.bend-left{
+  border-radius: 5px 5px 0px;
+}

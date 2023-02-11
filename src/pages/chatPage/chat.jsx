@@ -1,10 +1,12 @@
 import React from "react";
-import Body from "./body/body";
+import ChatPageBody from "./body/body";
+import Header from "./header/header";
 
 const ChatPage = () => {
   return (
     <div>
-        <Body />
+        <Header />
+        <ChatPageBody />
     </div>
   )
 }
