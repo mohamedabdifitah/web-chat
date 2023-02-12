@@ -13,5 +13,26 @@
   flex: 1;
 }
 .bend-left{
-  border-radius: 5px 5px 0px;
+  border-radius: 9px 9px 0px;
+}
+.blue{
+  background-color:var(--sidebar-background);
+  height: 100%;
+  z-index: 100;
+  
+    /* overflow: hidden; */
+
+}
+.white{
+  background-color: var(--side-navigation-background);
+}
+.curved{
+  
+  border-radius: 9px;
+}
+.outline{
+  outline: 0;
+}
+.padding-left{
+  padding-left: 16px; 
 }
