@@ -3,7 +3,7 @@ import './App.css'
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import MainLayout from './layouts/mainlayout/mainlayout'
 import ChatPage from './pages/chatPage/chat';
-import Sidebar from './pages/chatsLists';
+import ConversionChats from './pages/chatsLists';
 
 function App() {
   
@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={
           <MainLayout>
-            <Sidebar />
+            <ConversionChats />
           </MainLayout>
           }>
             <Route path='' element={<ChatPage/>}/>

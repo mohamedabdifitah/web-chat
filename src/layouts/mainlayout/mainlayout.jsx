@@ -10,6 +10,7 @@ const MainLayout = ({children}) =>{
     <div className="main-layout">
       <div className="window">
         <SideNavigation />
+        
         {children}
         <div>
           <Outlet/>

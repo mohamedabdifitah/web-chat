@@ -1,0 +1,18 @@
+.chats{
+  position: relative;
+  width: 300px;
+  min-width:300px;
+  overflow: hidden;
+  
+}
+.search{
+  position: relative;
+    width: 85%;
+    height: 20px;
+    left: 17px;
+    background-color: inherit;
+    padding-top: 5px;
+    border-color: transparent;
+    border-bottom: 1.5px solid var(--special-icon-color);
+}
+

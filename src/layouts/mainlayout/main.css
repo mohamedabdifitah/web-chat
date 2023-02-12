@@ -1,14 +1,4 @@
-.sidebar{
-  flex: 0 0 40%;
-  max-width: 40%;
-  background-color: aqua;
-  height: 100%;
-  position: relative;
-  z-index: 100;
-  height: 100%;
-    /* overflow: hidden; */
 
-}
 .main-layout{
   position: relative;
   width:100%;
@@ -57,7 +47,7 @@
   width:30px ;
   border: 4px solid var(--side-navigation-background);
   /* left: 5px; */
-  color: var(--primary-icon-color);
+  color: var(--special-icon-color);
   background-color: var(--side-navigation-background);
   /* padding-left: 9px; */
 }    
@@ -79,8 +69,9 @@
 
 .navigation-btn{
   width: 100%;
+  position: relative;
   height: 100vh;
-  top: 20px;
+  top: 60px;
   display: flex;
   gap: 15px;
   flex-direction: column;

@@ -24,7 +24,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   },
   
 }));
-const ProfileAvatar = (props) => {
+const ChatAvatar = (props) => {
   // var { loading = false } = props
   
   const [loading,setLoading] = useState(true);
@@ -32,7 +32,7 @@ const ProfileAvatar = (props) => {
   //   setLoading(false);
   // },[])
   return (
-    <div>
+    <div style={{ position: 'relative',left:"18px",width:"50px"}}>
       {!loading?<Skeleton variant="rectangular" width={35} height={35} sx={{borderRadius:"9px"}}/>:
 
           <StyledBadge
@@ -44,11 +44,11 @@ const ProfileAvatar = (props) => {
               setLoading(false);
             }} alt="Remy Sharp" src="https://mui.com/static/images/avatar/1.jpg" sx={{width:"35px",height:"35px",borderRadius:"9px",}}  /> */}
 
-            <Avatar onload={() => setLoading(false)} alt="Remy Sharp" src="https://mui.com/static/images/avatar/1.jpg" sx={{width:"35px",height:"35px",borderRadius:"9px",}}  />
+            <Avatar  onload={() => setLoading(false)} alt="Remy Sharp" src="https://mui.com/static/images/avatar/1.jpg" sx={{width:"35px",height:"35px",borderRadius:"9px",}}  />
           </StyledBadge>
       }
         {/* </Skeleton> */}
     </div>
   )
 }
-export default ProfileAvatar;
+export default ChatAvatar;

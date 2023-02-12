@@ -6,12 +6,49 @@ body{
   height: 100vh;
   
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
 *{
   font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;;
 }
 :root{
   --side-navigation-background:white;
+  --sidebar-background:#f4f8fb;
+
   --primary-icon-color:black;
   --active-icon-color:white;
-  --btn-background:rgb(84, 26, 210);
+  --outline-card-active:white;
+  --primary-text:black;
+  --tittle-2:#c7cccd;
+  --btn-background:#402ca7;
+  --special-icon-color:#888888;
+  --tabs-icons-off:#d3d3d3;
+  --tabs-icons-on:#62658f;
+  --chats-name-off:#5b5c72;
+  --chats-name-on:#242a4d;
+  --recent-message-off:#8696a0;
+  --chat-title:#2e3159;
+  --date-sent-on-chats:#d4d8db; /* #8696a0* from whatsapp web /
+
+
+  --badge-background:#eb7852 ; /* this is also good #f38064 */
 }

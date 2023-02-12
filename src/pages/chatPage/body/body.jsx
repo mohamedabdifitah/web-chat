@@ -15,7 +15,7 @@ const ChatPageBody = () => {
             </div>
           </div>
         </div>
-        <div tabindex="-1" class="n5hs2j7m oq31bsqd gx1rr48f qh5tioqs" data-tab="8" role="application">
+        <div tabIndex="-1" className="n5hs2j7m oq31bsqd gx1rr48f qh5tioqs" data-tab="8" role="application">
         </div>
         </div>
       </div>
