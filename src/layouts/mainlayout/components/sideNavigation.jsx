@@ -1,5 +1,5 @@
 import React from "react"
-import ProfileAvatar from "./avatar"
+import ProfileAvatar from "../../../components/Avatar/avatar"
 import { IconButton, useTheme } from "@mui/material"
 import { IoIosAdd } from "react-icons/io"
 import { BiMessageRounded } from "react-icons/bi"
@@ -18,7 +18,7 @@ const SideNavigation = ()=>{
         
       <div className="column avatar panel">
 
-        <ProfileAvatar loading={true} />
+        <ProfileAvatar loading={true}  badgecls={"badge-sidebar"}/>
       </div>
       <div className="navigation-btn ">
         <ButtonLink path={"/add"}>

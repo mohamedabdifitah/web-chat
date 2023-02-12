@@ -39,6 +39,7 @@
   /* background-color: azure; */
   width: 90px;
   height: 45px;
+  cursor: pointer;
   padding-left: 15px;
   gap: 20px;
   padding-right: 10px;

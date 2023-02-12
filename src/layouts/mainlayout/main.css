@@ -5,6 +5,7 @@
   height: 100vh;
 }
 .window{
+  overflow: hidden;
   display: flex;
   position: relative;
   width: 100%;
@@ -76,4 +77,9 @@
   gap: 15px;
   flex-direction: column;
   /* align-items: center; */
+}
+.body{
+  position: relative;
+  width: 100%;
+  height: 100%;
 }

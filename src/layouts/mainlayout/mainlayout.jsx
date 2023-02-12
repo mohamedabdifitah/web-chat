@@ -12,7 +12,7 @@ const MainLayout = ({children}) =>{
         <SideNavigation />
         
         {children}
-        <div>
+        <div className="body">
           <Outlet/>
         </div>
       </div>

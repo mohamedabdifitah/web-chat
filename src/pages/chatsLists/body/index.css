@@ -22,6 +22,7 @@
   background: var(--outline-card-active);
   width: 100%;
   gap: 10px;
+  cursor: pointer;
   /* border: 42px; */
   align-items: center;
   display: flex;
@@ -44,17 +45,18 @@
   display: flex;
   padding-right: 13px;
   text-align: left;
+  height:25px;
   gap: 8px;
 }
 .timestamp{
   font-size: 12px;
-  color:var(--recent-message-off);
+  /* color:var(--recent-message-off); */
   position: relative;
   top: 5px;
 }
 .chat-title{
   font-size: 17px;
-  height: 22px;
+  height: 100%;
   width: 64%;
   overflow: hidden;
   position: relative;
@@ -66,7 +68,7 @@
   height: 20px;
   position: relative;
   width: 60%;
-  color:var(--recent-message-off);
+  /* color:var(--recent-message-off); */
   overflow: hidden;
 }
 .text{

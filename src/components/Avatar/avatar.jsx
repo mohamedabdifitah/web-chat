@@ -1,63 +1,74 @@
-import * as React from 'react';
+
 import { styled } from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-
+import Skeleton from '@mui/material/Skeleton';
+import { useEffect, useState } from 'react';
+import "./avatar.css"
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
     backgroundColor: '#44b700',
     color: '#44b700',
-    boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
-    '&::after': {
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '100%',
-      borderRadius: '50%',
-      animation: 'ripple 1.2s infinite ease-in-out',
-      border: '1px solid currentColor',
-      content: '""',
-    },
+    boxShadow: `0 0 0 1.2px ${theme.palette.background.paper}`,
+    // position: 'absolute',
+    // top: 0,
+    // left: 0,
+    // width: '5px',
+    // height: '5px',
+    // borderRadius: '50%',
+    // // animation: 'ripple 1.2s infinite ease-in-out',
+    // // border: '1px solid currentColor',
+    // content: '""',
+    // '&::after': {
+    //   position: 'absolute',
+    //   top: 0,
+    //   left: 0,
+    //   width: '100%',
+    //   height: '100%',
+    //   borderRadius: '50%',
+    //   // animation: 'ripple 1.2s infinite ease-in-out',
+    //   // border: '1px solid currentColor',
+    //   content: '""',
+    // },
   },
-  '@keyframes ripple': {
-    '0%': {
-      transform: 'scale(.8)',
-      opacity: 1,
-    },
-    '100%': {
-      transform: 'scale(2.4)',
-      opacity: 0,
-    },
-  },
+  
 }));
-
-const SmallAvatar = styled(Avatar)(({ theme }) => ({
-  width: 22,
-  height: 22,
-  border: `2px solid ${theme.palette.background.paper}`,
-}));
-
-export default function BadgeAvatars() {
+const ProfileAvatar = (props) => {
+  // var { loading = false } = props
+  
+  const [loading,setLoading] = useState(true);
+  // useEffect(() =>{
+  //   setLoading(false);
+  // },[])
+  var {style , url , badgecls} = props;
+  var basicStyle ={
+    width:"35px",
+    height:"35px",
+    borderRadius:"9px"
+  }
   return (
-    <Stack direction="row" spacing={2}>
-      <StyledBadge
-        overlap="circular"
-        anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-        variant="dot"
-      >
-        <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-      </StyledBadge>
-      <Badge
-        overlap="circular"
-        anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-        badgeContent={
-          <SmallAvatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-        }
-      >
-        <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-      </Badge>
-    </Stack>
-  );
+    <div>
+      {!loading?<Skeleton variant="rectangular"  sx={style?style:basicStyle}/>:
+        <div style={style}>
+          <Avatar onload={() => setLoading(false)} alt="Remy Sharp" src="https://mui.com/static/images/avatar/1.jpg" sx={style?style:basicStyle}/>
+          <span className={`badge ${badgecls}`}>
+
+          </span>
+        </div>
+          
+      }
+        {/* </Skeleton> */}
+    </div>
+  )
 }
+export default ProfileAvatar;
+
+
+{/* <span class="MuiBadge-root MuiBadge-root css-1xk9h57-MuiBadge-root">
+  <div class="MuiAvatar-root MuiAvatar-circular css-3yfne5-MuiAvatar-root">
+    <img alt="Remy Sharp" src="https://mui.com/static/images/avatar/1.jpg" class="MuiAvatar-img css-1pqm26d-MuiAvatar-img">
+  </div>
+  <span class="MuiBadge-badge MuiBadge-dot MuiBadge-anchorOriginBottomRight MuiBadge-anchorOriginBottomRightCircular MuiBadge-overlapCircular MuiBadge-badge css-ank3r8-MuiBadge-badge">
+  </span>
+  </span> */}

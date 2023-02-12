@@ -5,7 +5,7 @@ import TextField from '@mui/material/TextField';
 import "./index.css";
 const ChatPage = () => {
   return (
-    <div>
+    <div className="chat">
         <Header />
         
         <ChatPageBody />
