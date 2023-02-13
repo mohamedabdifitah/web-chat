@@ -79,3 +79,16 @@
   display: flex;
   padding-right: 8px;
 }
+.chat-icons{
+  position: relative;
+  width: 40%;
+  gap: 12px;
+  align-items: center;
+  display: flex;
+}
+.chat-icon{
+  width: 18px;
+  position: relative;
+  height: 18px;
+  color: var(--chat-card-icons);
+}

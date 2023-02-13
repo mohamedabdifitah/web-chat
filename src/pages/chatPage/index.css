@@ -11,6 +11,7 @@
 .header-chatpage{
   position:relative;
   width: 100%;
+
   height: 70px;
   display: flex;
   overflow: hidden;
@@ -46,4 +47,16 @@
     /* width: %; */
   /* color: var(--recent-message-off); */
   overflow: hidden;
+}
+
+.chat-body{
+  position: relative;
+  height: 87%;
+  display: flex;
+  flex-direction: column;
+}
+.copybale-area{
+  position: relative;
+  flex: 1;
+
 }
