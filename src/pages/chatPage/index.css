@@ -48,15 +48,3 @@
   /* color: var(--recent-message-off); */
   overflow: hidden;
 }
-
-.chat-body{
-  position: relative;
-  height: 87%;
-  display: flex;
-  flex-direction: column;
-}
-.copybale-area{
-  position: relative;
-  flex: 1;
-
-}
