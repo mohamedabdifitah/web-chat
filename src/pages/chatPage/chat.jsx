@@ -10,7 +10,7 @@ const ChatPage = () => {
         <Header />
         
         <ChatPageBody />
-      
+        
     </div>
   )
 }

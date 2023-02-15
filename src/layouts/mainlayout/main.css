@@ -37,6 +37,7 @@
 
 .nav-icons{
   left: 5px;
+
   position: relative;
   /* width: 100%; */
   height:30px;
@@ -48,6 +49,7 @@
   width:30px ;
   border: 4px solid var(--side-navigation-background);
   /* left: 5px; */
+  cursor: pointer;
   color: var(--special-icon-color);
   background-color: var(--side-navigation-background);
   /* padding-left: 9px; */

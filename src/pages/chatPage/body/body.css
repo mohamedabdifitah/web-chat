@@ -1,0 +1,58 @@
+.chat-body{
+  position: relative;
+  height: 87%;
+  display: flex;
+  background-color: aqua;
+  flex-direction: column;
+}
+.copybale-area{
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+.conversion-panel-messages{
+  position: relative;
+  background-color: black;
+  flex: 1;
+  overflow-y:scroll;
+}
+.row{
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  /* padding: ; */
+  min-height: 33px;
+  /* background-color: aquamarine; */
+  
+
+  /* background-color: aquamarine; */
+}
+.msg-container {
+  position: relative;
+  width: fit-content;
+  padding-left: 53px;
+  padding-top: 15px;
+  background-color: aquamarine;
+  /* min-width: 50px; */
+  height: fit-content;
+  min-height: 33px;
+}
+.left{
+  /* position: relative; */
+  align-items: flex-end;
+  display:flex;
+  flex-direction: column;
+}
+.right{
+  /* position: relative; */
+  align-items: flex-start;
+  display:flex;
+  flex-direction: column;
+}
+.center{
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+}

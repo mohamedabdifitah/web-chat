@@ -14,7 +14,7 @@ import Tooltip from '@mui/material/Tooltip';
 const SideNavigation = ()=>{
   var themePlate = useTheme(theme)
   return (
-    <div className="side-navigation">
+    <div className="side-navigation border-right">
         
       <div className="column avatar panel">
 

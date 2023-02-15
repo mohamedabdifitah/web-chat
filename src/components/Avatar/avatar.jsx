@@ -48,9 +48,9 @@ const ProfileAvatar = (props) => {
     borderRadius:"9px"
   }
   return (
-    <div>
+    <div style={style}>
       {!loading?<Skeleton variant="rectangular"  sx={style?style:basicStyle}/>:
-        <div style={style}>
+        <div  title={"Profile Details"}>
           <Avatar onload={() => setLoading(false)} alt="Remy Sharp" src="https://mui.com/static/images/avatar/1.jpg" sx={style?style:basicStyle}/>
           <span className={`badge ${badgecls}`}>
 

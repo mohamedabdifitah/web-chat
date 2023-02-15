@@ -6,7 +6,7 @@ import "./index.css"
 import TextField from '@mui/material/TextField';
 const ConversionChats = () => {
   return (
-    <div className="chats blue">
+    <div className="chats blue border-right">
       <Header />
       {/* <TextField id="standard-basic" label="Standard" variant="standard" /> */}
       <input type="text" placeholder="Search..." className="search outline "/>
