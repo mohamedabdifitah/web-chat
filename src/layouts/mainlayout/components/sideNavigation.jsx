@@ -10,15 +10,20 @@ import { FiMessageCircle } from "react-icons/fi";
 import { red } from '@mui/material/colors';
 import {theme } from "../theme"
 import Tooltip from '@mui/material/Tooltip';
-
+import { NavLink , useNavigate } from "react-router-dom"
 const SideNavigation = ()=>{
   var themePlate = useTheme(theme)
+  var navigate = useNavigate()
+  var navigateProfile =() => {
+    navigate("/settings")
+  }
   return (
     <div className="side-navigation border-right">
         
-      <div className="column avatar panel">
-
-        <ProfileAvatar loading={true}  badgecls={"badge-sidebar"}/>
+      <div className="column avatar panel" onClick={() => navigateProfile()} >
+  
+          <ProfileAvatar loading={true}  badgecls={"badge-sidebar"} />
+  
       </div>
       <div className="navigation-btn ">
         <ButtonLink path={"/add"}>
@@ -31,14 +36,14 @@ const SideNavigation = ()=>{
             <FiMessageCircle fontSize={22} style={style}/>
           {/* </Badge> */}
         </ButtonLink>
-        <Tooltip title="Add" arrow>
-          <ButtonLink path={"/settings"}>
+        {/* <Tooltip title="" arrow> */}
+          {/* <ButtonLink path={"/settings"}> */}
           {/* <Badge 
             color="primary"  badgeContent={2}> */}
-              <TbSettings fontSize={25} style={style2}/>
+              {/* <TbSettings fontSize={25} style={style2}/> */}
             {/* </Badge> */}
-          </ButtonLink>
-        </Tooltip>
+          {/* </ButtonLink> */}
+        {/* </Tooltip> */}
       </div>
     </div>
   )

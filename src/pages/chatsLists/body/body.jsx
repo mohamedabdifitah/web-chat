@@ -4,6 +4,7 @@ import ChatCard from "./components/chat-card";
 import PerfectScrollbar from 'react-perfect-scrollbar'
 import "./index.scss"
 import ArchiveCard from "./components/archive-card";
+import { CustomIcon } from "../../../components/icons/custom-icons";
 const ChatListBody = () => {
   return (
     <div className="chat-list-body chat-body-height">
@@ -23,6 +24,7 @@ const ChatListBody = () => {
         <ChatCard />
         {/* </PerfectScrollbar> */}
       </div>
+      
       {/* <SimpleSnackbar /> */}
     </div>
   )

@@ -16,10 +16,10 @@ const Header = () => {
         Chats
       </span>
       <div className="white curved icon-panel-horiz">
-        <MdOutlinePerson fontSize={18} color="black" />
-        <AiOutlineFilter fontSize={18} color="black" />
+        <MdOutlinePerson title={"chats"} fontSize={18} color="var(--primary-icon-color)" />
+        <AiOutlineFilter title={"groups"} fontSize={18} color="var(--primary-icon-color)" />
         {/* <MdFace fontSize={18} color="black" /> */}
-        <MdPeopleOutline fontSize={18} color="black" />
+        <MdPeopleOutline title={"contancts"} fontSize={18} color="var(--primary-icon-color)" />
         {/* <img src={"./pin.svg"} /> */}
         {/* <TbDotsVertical fontSize={20} color='white'/>
         <FiEdit fontSize={20} color='white'/>

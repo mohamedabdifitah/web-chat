@@ -1,20 +1,23 @@
 import React from "react";
 import { CustomIcon } from "../../../../components/icons/custom-icons";
+import ProfileAvatar from "../../../../components/Avatar/avatar";
 const LeftMessage = () =>{
   return (
-    <div className="row left ">
+    <div className="row left  ">
+      <div style={{position: "relative",alignItems:"self-end",display:"flex"}}>
+        <ProfileAvatar style ={{
+          width:"27px",
+          height:"27px",
+          borderRadius:"9px"
+      }} />
+  </div>
       <div className="msg-container  ">
-        <div className="content">
+        <div className="msg-content">
           <span>
             Hello
           </span>
         </div>
-        <div className="info">
-          <span className="timestamp text off">19/12/2022</span>
-          <span className="chat-icon">
-          <CustomIcon name={"sent"}/>
-          </span>
-        </div>
+        
       </div>
     </div>
   )

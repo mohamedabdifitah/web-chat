@@ -7,6 +7,7 @@ import { FiSend } from "react-icons/fi";
 import "./footer.css"
 import { IconButton } from '@mui/material';
 import { EmailOutlined } from '@mui/icons-material';
+import CustomEmojiPicker from '../../../components/emoji-picker/emoji-picker';
 const Footer = () => {
   const [ selectedEmoji , setSelectedEmoji] = useState()
   const [ openEmoji, SetOpenEmoji] = useState()
@@ -33,8 +34,9 @@ const Footer = () => {
         <IconButton>
           <FiSend />
         </IconButton>
-
-        {openEmoji?<Picker autoFocusSearch={false}  preload={true} onEmojiClick={pickEmoji}  />:""}
+        
+        <CustomEmojiPicker pickEmoji={pickEmoji} open={openEmoji} SetOpen={SetOpenEmoji} />
+      
       </div>
     </footer>
 

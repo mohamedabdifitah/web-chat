@@ -7,7 +7,7 @@ import Skeleton from '@mui/material/Skeleton';
 import { useEffect, useState } from 'react';
 const ChatAvatar = (props) => {
   return (
-    <div style={{ left:"18px",position: 'relative',width:"50px"}}>
+    <div title="Profile Details" className="pointer" style={{ left:"18px",position: 'relative',width:"50px"}}>
       
       <Avatar   alt="Remy Sharp" src="https://mui.com/static/images/avatar/1.jpg" sx={{width:"35px",height:"35px",borderRadius:"9px",}}  />
       <span className={`badge badge-chat-list`}/>

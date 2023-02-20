@@ -1,7 +1,7 @@
 .badge{
   background-color: #44b700;
   color: #44b700;
-  box-shadow: 0 0 0 1.2px #fff;
+  box-shadow: 0 0 0 1.2px var(--side-navigation-background);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

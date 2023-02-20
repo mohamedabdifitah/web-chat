@@ -70,20 +70,20 @@
   color:var(--recent-message-off);
 }
 .border-left{
-  border-left:1px solid #e9edef;
+  border-left:1px solid var(--border-color);
 }
 .border-right{
-  border-right: 1px solid #e9edef;
+  border-right: 1px solid var(--border-color);
 }
 .border-top{
-  border-top: 1px solid #e9edef;
+  border-top: 1px solid var(--border-color);
   
 }
 .border-bottom{
-  border-bottom: 1px solid #e9edef;
+  border-bottom: 1px solid var(--border-color);
 }
 .border{
-  border: 1px solid #e9edef;;
+  border: 1px solid var(--border-color);;
 }
 .only-show-hover{
   display: none;
@@ -94,4 +94,19 @@
 
 .green{
   color:#00a884;
+}
+.pointer{
+  cursor: pointer;
+}
+.x-33{
+  font-size: 33px;
+  width: 33px;
+  height: 33px;
+}
+.chats,.settings,.contacts{
+  position: relative;
+  width: 300px;
+  min-width:300px;
+  overflow: hidden;
+  
 }
