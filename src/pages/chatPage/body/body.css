@@ -73,6 +73,7 @@
 .turn-to-bottom{
   position: absolute;
   top: 81%;
+  cursor: pointer;
   left: 90%;
   display: flex;
   align-items: center;

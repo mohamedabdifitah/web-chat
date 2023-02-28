@@ -6,6 +6,7 @@ import { BsFillPersonFill } from "react-icons/bs"
 import { MdFace , MdPeopleOutline ,MdOutlinePerson} from "react-icons/md"
 import {AiOutlineFilter } from "react-icons/ai";
 import { FiEdit } from "react-icons/fi";
+import { FcMissedCall } from "react-icons/fc"
 import { TbDotsVertical } from "react-icons/tb";
 const Header = () => {
   return (
@@ -17,7 +18,7 @@ const Header = () => {
       </span>
       <div className="white curved icon-panel-horiz">
         <MdOutlinePerson title={"chats"} fontSize={18} color="var(--primary-icon-color)" />
-        <AiOutlineFilter title={"groups"} fontSize={18} color="var(--primary-icon-color)" />
+        <FcMissedCall title={"groups"} fontSize={18} color="var(--primary-icon-color)" />
         {/* <MdFace fontSize={18} color="black" /> */}
         <MdPeopleOutline title={"contancts"} fontSize={18} color="var(--primary-icon-color)" />
         {/* <img src={"./pin.svg"} /> */}

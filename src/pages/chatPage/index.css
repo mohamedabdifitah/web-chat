@@ -32,7 +32,8 @@
   flex-direction: column;
   display: flex;
   gap: 5px;
-  width: 60%;
+  flex: 1;
+  /* width: 66%; */
   top: 5px;
 }
 .left-header{
@@ -47,4 +48,66 @@
     /* width: %; */
   /* color: var(--recent-message-off); */
   overflow: hidden;
+}
+.footer{
+  position: relative;
+  min-height: 62px;
+  display: flex;
+  color: var(--primary-text);
+}
+.footer > div{
+  position: relative;
+  display: flex;
+  width: 100%;
+} 
+.input{
+  flex: 1;
+  font-size: 15px;
+  outline: none;
+  margin: 9px 12px 4px 16px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 15px;
+  line-break: anywhere;
+  overflow-y:auto;
+  min-height: 20px;
+  height: fit-content;
+  color: var(--primary-text);
+}
+.side-icons-panel {
+  position: relative;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 150px;
+}
+.side-icons-panel > button , .button-footer {
+  position: sticky;
+  width: 40px;
+  height: 40px;
+  border-radius: 9px;
+  border: 0px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.button-footer {
+  margin-left: 10px;
+  font-size: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.button-normal{
+  background-color: initial;
+  color: var(--primary-text);
+}
+.button-selected {
+  
+  background-color: #fff3f1;
+}
+.first-column-footer{
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }

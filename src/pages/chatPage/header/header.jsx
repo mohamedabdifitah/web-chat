@@ -1,7 +1,7 @@
 import React from "react";
 
 import ProfileAvatar from "../../../components/Avatar/avatar";
-
+import "./index.scss"
 import { BiSearchAlt2 , BiDotsVerticalRounded } from "react-icons/bi"
 import { IconButton } from "@mui/material";
 import AccountMenu from "./menu";
@@ -23,7 +23,7 @@ const Header = () => {
           typing...
         </span>
       </div>
-      <div>
+      <div className="header-menu">
         <AccountMenu />
       </div>
     </div>

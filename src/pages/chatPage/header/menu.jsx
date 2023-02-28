@@ -12,6 +12,8 @@ import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import { BiSearchAlt2 , BiDotsVerticalRounded } from "react-icons/bi"
+import { MdCall } from "react-icons/md" 
+import { FiVideo } from "react-icons/fi"
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -24,18 +26,29 @@ export default function AccountMenu() {
   return (
     <React.Fragment>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
-        <BiSearchAlt2 />
+        <button className='button-footer button-normal' >
+          <BiSearchAlt2 />
+        </button>
+        <button className='button-footer button-normal' >
+          <MdCall/>
+        </button>
+        <button className='button-footer button-normal' >
+          <FiVideo  />
+        </button>
+      
+        
         <Tooltip title="Account settings">
-          <IconButton
+          <button
             onClick={handleClick}
             size="small"
+            className='button-footer button-normal'
             sx={{ ml: 2 }}
             aria-controls={open ? 'account-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
           >
             <BiDotsVerticalRounded />
-          </IconButton>
+          </button>
         </Tooltip>
       </Box>
       <Menu
