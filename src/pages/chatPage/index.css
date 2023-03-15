@@ -89,21 +89,35 @@
   border-radius: 9px;
   border: 0px;
   cursor: pointer;
-  font-size: 17px;
+}
+.side-icons-panel > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .button-footer {
   margin-left: 10px;
   font-size: 20px;
-  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  /* margin-top: 5px; */
+  justify-content: center;
+  
   cursor: pointer;
 }
 .button-normal{
+  font-size: 17px;
   background-color: initial;
   color: var(--primary-text);
 }
 .button-selected {
-  
-  background-color: #fff3f1;
+  font-size: 14px;
+  background-color: var(--special-btn-selected);
+  /* background-color: #fff3f1; */
+  /* background-color:#3a2724 ; */
+  /* chat title color  #141844 */
+/* button-footer background #3a2724 */
+/* missed-panel #221e1c */
 }
 .first-column-footer{
   position: relative;

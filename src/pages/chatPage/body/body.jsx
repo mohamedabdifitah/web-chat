@@ -7,6 +7,7 @@ import LeftMessage from "./rows/leftMessage";
 import { CustomIcon } from "../../../components/icons/custom-icons";
 import CustomBadge from "../../../components/badge/badge";
 import { IconButton } from "@mui/material";
+import { LeftMissedCallContainer , RightMissedCallContainer } from "./rows/call";
 // import Rows from "./rows";
 const ChatPageBody = () => {
   return (
@@ -18,6 +19,8 @@ const ChatPageBody = () => {
             <RightMessage />
             <LeftMessage />
             <LeftMessage />
+            <LeftMissedCallContainer />
+            <RightMissedCallContainer />
             
           </div>
 

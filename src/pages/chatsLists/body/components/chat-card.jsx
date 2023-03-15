@@ -3,13 +3,17 @@ import ChatAvatar from "./avatar";
 import { RiArrowDropDownLine } from "react-icons/ri"
 import Badge from '@mui/material/Badge';
 import CustomBadge  from "../../../../components/badge/badge"
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 import { CustomIcon } from "../../../../components/icons/custom-icons";
 import ProfileAvatar from "../../../../components/Avatar/avatar";
 const ChatCard = () => {
+  const navigate = useNavigate()
+  function Navigate(path) {
+    navigate.push(path)
+  }
   return (
-    <div className="card-container border-bottom">
-      <div component="div" className="outline-card "  data-tooltip={"block"}>
+    <div onClick={() => Navigate("/hello")} className="card-container border-bottom">
+      <NavLink to={"/settings"} component="div" className="outline-card "   >
         <div >
           <ChatAvatar/>
         </div>
@@ -38,7 +42,7 @@ const ChatCard = () => {
             </div>
           </div>
         </div>
-      </div>
+      </NavLink>
     </div>
 
 

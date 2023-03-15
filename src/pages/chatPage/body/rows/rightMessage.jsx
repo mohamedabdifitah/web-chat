@@ -3,18 +3,32 @@ import { CustomIcon } from "../../../../components/icons/custom-icons";
 const RightMessage = () =>{
   return (
     <div className="row right">
-      <div className="msg-container   ">
+      
+      <div className="msg-container  ">
+
         <div className="msg-content">
-          <span>
-            Hello
+          <span className="message-text">
+            Hello 
+            <span className="off timestamp-chat">
+            10:34 pm
           </span>
-        </div>
-        <div className="msg-info">
-          <span className="timestamp text off">20:40</span>
           <span className="chat-icon">
-          <CustomIcon name={"sent"}/>
+            <CustomIcon name={"read"}/>
+                
+          </span>
           </span>
         </div>
+        <div className="msg-information">
+          <span className="off timestamp-chat">
+            10:34 pm
+          </span>
+          <span className="chat-icon">
+            <CustomIcon name={"read"}/>
+                
+          </span>
+
+        </div>
+        
       </div>
     </div>
   )

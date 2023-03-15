@@ -1,0 +1,8 @@
+.input::after{
+  content: "\a";
+  white-space: pre;
+}
+.input::before{
+  content: "\a";
+  white-space: pre;
+}

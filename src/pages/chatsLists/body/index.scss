@@ -3,7 +3,7 @@
   top: 20px;
   
   /* overflow-y: scroll; */
-  width: 92%;
+  width: 94.56%;
   left: 6px;
 }
 .chat-list-body > div{
@@ -38,10 +38,10 @@
   border-radius: 9px 9px 0px;
   height: 66px;
 }  
-[data-tooltip]:hover::after{
-  content: attr(data-tooltip);
+.outline-card:hover{
+  // content: attr(data-tooltip);
   .dropdown{
-    display: "block";
+    display: "flex";
     
   }
 }
@@ -136,3 +136,4 @@
   top: 26px;
   width: 6px;
 }
+

@@ -13,7 +13,7 @@
 }
 .conversion-panel-messages{
   position: relative;
-  background-color: var(--sidebar-background);
+  /* background-color: var(--sidebar-background); */
   flex: 1;
 }
 .messages{
@@ -35,24 +35,51 @@
 
   /* background-color: aquamarine; */
 }
+.msg-content{
+  position: relative;
+  border-radius: 9px 9px 9px 0px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  background: lightgreen;
+  padding: 9px;
+}
+.msg-information{
+  display: flex;
+  width: 100%;
+
+}
+.timestamp-chat{
+  /* color: #dddddd; */
+  font-size: 11px;
+  font-weight: 100;
+  flex:1;
+  align-items: self-start;
+}
 .msg-container {
   position: relative;
   width: fit-content;
   padding: 7px;
   display: flex;
   gap: 0px;
+  max-width: 60%;
   align-items: self-start;
   /* padding-left: 53px;
   padding-top: 15px; */
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   /* min-width: 50px; */
   height: fit-content;
   min-height: 33px;
   border-radius: 5px;
   flex-direction: column;
 }
+.message-text{
+  width: 100%;
+  position: relative;
+  line-break: anywhere;
+}
 .left{
-  align-items: flex-start;
+  /* align-items: flex-start; */
   display: flex;
   /* flex-direction: row; */
   flex-direction: row;
@@ -81,7 +108,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: var(--side-navigation-background);
+  background-color: var(--sidebar-background);
 }
 .left-center{
   position: relative;
@@ -100,3 +127,42 @@
   flex-direction: row;
   margin-top: -10px;
 }
+.missed-call-panel {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 70px;
+  margin-right: 9px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 9px;
+  background-color: var(--missed-call-panel);
+  /* background-color: #fef9f6; */
+  /* background-color: #221e1c; */
+  /* background-color: #230c00; */
+  /* button-footer background #3a2724 */
+  /* chat title color  #141844 */
+/* missed-panel #221e1c */
+}
+.missed-call-content{
+  padding: 14px;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.call-back{
+  background: #3c2da6;
+  color: white;
+  width: 91px;
+  height: 40px;
+  border: none;
+  border-radius: 9px;
+  margin-right: 7px;
+  display: flex;
+  /* margin-top: 8px; */
+  align-items: center;
+  justify-content: center;
+}
+

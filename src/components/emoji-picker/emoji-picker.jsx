@@ -8,6 +8,7 @@ const CustomEmojiPicker = (props) => {
     left: "4%",
     // width:'fi'
   }
+  
   if(open){
     return (
   
