@@ -15,23 +15,14 @@ const LeftMessage = () =>{
 
         <div className="msg-content">
           <span className="message-text">
-            Hello hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh hhhhhhhhhhh
-            hhhhhhhhhhhhhhh
-            hhhhhhhhh
-            hhhhhhhhhhhh
-            <span className="off timestamp-chat">
-            10:34 pm
-          </span>
+            Hello
           </span>
         </div>
         <div className="msg-information">
           <span className="off timestamp-chat">
-            10:34 pm
+            10:34
           </span>
-          {/* <span className="chat-icon">
-            <CustomIcon name={"read"}/>
-                
-          </span> */}
+          <span className="off timestamp-chat status-msg">read</span>
 
         </div>
         

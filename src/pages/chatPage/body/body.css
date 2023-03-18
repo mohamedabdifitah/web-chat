@@ -9,12 +9,20 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  overflow:hidden;
 
+}
+.right-padding{
+  right: 60px;
 }
 .conversion-panel-messages{
   position: relative;
   /* background-color: var(--sidebar-background); */
-  flex: 1;
+  /* flex: 1; */
+  height:90%;
+  padding-bottom: 5px;
+  /* gap: 2%; */
+  overflow: auto;
 }
 .messages{
   position: relative;
@@ -75,8 +83,12 @@
 }
 .message-text{
   width: 100%;
+  min-width: 49px;
   position: relative;
   line-break: anywhere;
+}
+.left-corner{
+  border-radius: 9px 9px 0px 9px;
 }
 .left{
   /* align-items: flex-start; */
@@ -99,20 +111,19 @@
 }
 .turn-to-bottom{
   position: absolute;
-  top: 81%;
+  top: 86%;
   cursor: pointer;
-  left: 90%;
+  left: 93.8%;
   display: flex;
   align-items: center;
-
-  width: 50px;
-  height: 50px;
+  width: 41px;
+  height: 41px;
   border-radius: 50%;
   background-color: var(--sidebar-background);
 }
 .left-center{
   position: relative;
-  left: 15px;;
+  left: 11px;;
 
 }
 
@@ -166,3 +177,10 @@
   justify-content: center;
 }
 
+.status-msg{
+  text-align: end;
+
+  right: 5px;
+  
+  position: relative;
+}

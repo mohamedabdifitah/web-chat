@@ -44,7 +44,7 @@ const Footer = () => {
 
           </button>
         </div>
-        <textarea style={{backgroundColor:"inherit",resize:"none"}} value={input} 
+        <input style={{backgroundColor:"inherit",resize:"none",lineBreak:"anywhere"}} value={input} 
         onChange={(e) => setInput(e.target.value)}
         className="input border" placeholder={"write your message..."} ref={DivRef}/>
         {/* <div className="input border" contentEditable={true} placeholder={"write your message..."} ref={DivRef}>

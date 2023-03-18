@@ -7,7 +7,7 @@ import Footer from "./footer/footer";
 const ChatPage = () => {
   return (
     <div className="chat">
-        <Header />
+        <Header title={"Bot"} />
         
         <ChatPageBody />
         

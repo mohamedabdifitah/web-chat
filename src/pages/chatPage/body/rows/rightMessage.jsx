@@ -4,28 +4,18 @@ const RightMessage = () =>{
   return (
     <div className="row right">
       
-      <div className="msg-container  ">
+      <div className="msg-container right-padding ">
 
-        <div className="msg-content">
-          <span className="message-text">
+        <div className="msg-content left-corner">
+          <span className="message-text ">
             Hello 
-            <span className="off timestamp-chat">
-            10:34 pm
-          </span>
-          <span className="chat-icon">
-            <CustomIcon name={"read"}/>
-                
-          </span>
           </span>
         </div>
-        <div className="msg-information">
-          <span className="off timestamp-chat">
-            10:34 pm
+        <div className="msg-information ">
+          <span className="off timestamp-chat ">
+            20:34
           </span>
-          <span className="chat-icon">
-            <CustomIcon name={"read"}/>
-                
-          </span>
+          <span className="off timestamp-chat status-msg">sent..</span>
 
         </div>
         

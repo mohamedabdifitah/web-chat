@@ -4,7 +4,7 @@ import { FiVideo } from "react-icons/fi"
 export function RightMissedCallContainer (){
   return (
     <div className="row right">
-      <div className="missed-call-panel">
+      <div className="missed-call-panel right-padding">
         <button className="button-footer button-selected">
           <FiVideo style={{color:"var(--badge)"}}/>
         </button>
@@ -26,7 +26,7 @@ export function RightMissedCallContainer (){
 }
 export function LeftMissedCallContainer (){
   return (
-      <div className="row left">
+      <div className="row left" style={{left:"51px"}}>
         <div className="missed-call-panel">
           <button className="button-footer button-selected">
             <FiVideo style={{color:"var(--badge)"}}/>
