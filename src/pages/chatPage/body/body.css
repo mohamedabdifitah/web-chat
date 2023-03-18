@@ -2,7 +2,20 @@
   position: relative;
   height: 87%;
   display: flex;
+  flex-direction: row;
+}
+.popup-area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
   flex-direction: column;
+
+}
+.popup-area > div{
+  width: 100%;
+  height: 100%;
+  align-items: center;
 }
 .copybale-area{
   position: relative;
@@ -19,10 +32,10 @@
   position: relative;
   /* background-color: var(--sidebar-background); */
   /* flex: 1; */
-  height:90%;
-  padding-bottom: 5px;
+  height:86%;
+  padding-bottom: 10px;
   /* gap: 2%; */
-  overflow: auto;
+  /* overflow: auto; */
 }
 .messages{
   position: relative;

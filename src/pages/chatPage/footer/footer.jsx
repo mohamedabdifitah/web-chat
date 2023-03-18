@@ -7,32 +7,15 @@ import { FiSend } from "react-icons/fi";
 import "./footer.scss"
 import { IconButton ,Button} from '@mui/material';
 import { EmailOutlined } from '@mui/icons-material';
-import CustomEmojiPicker from '../../../components/emoji-picker/emoji-picker';
-const Footer = () => {
-  const [ selectedEmoji , setSelectedEmoji] = useState()
-  const [ openEmoji, SetOpenEmoji] = useState()
-  const DivRef = useRef()
-  const [input, setInput] = useState('');
-  const pickEmoji = ({emoji}) =>{
-    setSelectedEmoji(emoji)
 
-    const ref = DivRef.current ;
-		ref.focus();
-    setInput((prevInput) => prevInput + emoji);
-		// // const start = textbox.substring(0 ,ref.selectionStart) ;
-		// // const end = textbox.substring( ref.selectionStart ) ;
-		// // const text = start + emoji.emoji + end ;
-
-		// // setTextbox(text);
-
-		// // setCursorPosition(start.length+emoji.length);
-		// // parsing emoji into texteditor 
-		// pasteHtmlAtCaret(`<b>${emoji}</b>`);
-  }
+const Footer = (props) => {
+  const {SetOpenEmoji,openEmoji,DivRef,setInput,input} = props;
+  
+  
   function changeMessageValue(e){
     e.target.value = value;
   }
-  console.log(DivRef.current)
+  // console.log(DivRef.current)
   return (
     <footer
     className='footer border-top'>
@@ -64,7 +47,7 @@ const Footer = () => {
           </button>
         </div>
         
-        <CustomEmojiPicker pickEmoji={pickEmoji} open={openEmoji} SetOpen={SetOpenEmoji} />
+        
       
       </div>
     </footer>
