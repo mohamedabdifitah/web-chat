@@ -9,7 +9,7 @@ const ConversionChats = () => {
     <div className="chats blue border-right">
       <Header />
       {/* <TextField id="standard-basic" label="Standard" variant="standard" /> */}
-      <input type="text" placeholder="Search..." className="search outline "/>
+      <input style={{color:"var(--primary-text)"}} type="text" placeholder="Search..." className="search outline "/>
       <ChatListBody />
 
     </div>
