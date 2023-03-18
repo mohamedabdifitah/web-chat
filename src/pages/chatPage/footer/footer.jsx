@@ -9,7 +9,7 @@ import { IconButton ,Button} from '@mui/material';
 import { EmailOutlined } from '@mui/icons-material';
 
 const Footer = (props) => {
-  const {SetOpenEmoji,openEmoji,DivRef,setInput,input} = props;
+  const {SetOpenEmoji,openEmoji,DivRef,setInput,input,setShowFileUploader,showFileUploader} = props;
   
   
   function changeMessageValue(e){
@@ -36,7 +36,7 @@ const Footer = (props) => {
         </div> */}
         <div className='side-icons-panel'>
 
-          <button className="button-normal" >
+          <button className="button-normal" onClick={() => {setShowFileUploader(!showFileUploader)}}>
             <MdAttachFile />
           </button>
           <button className="button-normal">

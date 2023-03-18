@@ -8,9 +8,11 @@ import { CustomIcon } from "../../../components/icons/custom-icons";
 import CustomBadge from "../../../components/badge/badge";
 import CustomEmojiPicker from '../../../components/emoji-picker/emoji-picker';
 import { IconButton } from "@mui/material";
+import SelectFileTypeComp from "../components/select-file-type";
 import { LeftMissedCallContainer , RightMissedCallContainer } from "./rows/call";
 // import Rows from "./rows";
 const ChatPageBody = () => {
+  const [showFileUploader,setShowFileUploader] = useState()
   const [input, setInput] = useState('');
   const [ selectedEmoji , setSelectedEmoji] = useState()
   const DivRef = useRef()
@@ -51,7 +53,7 @@ const ChatPageBody = () => {
 
             </div>
             <div>
-              
+              <SelectFileTypeComp show={showFileUploader}/>
             </div>
           </div>
           <div className="messages" ref={ConPanelRef}>
@@ -80,7 +82,7 @@ const ChatPageBody = () => {
                 </div>
             </div>:""}
         </div>
-      <Footer openEmoji={openEmoji} SetOpenEmoji={SetOpenEmoji} DivRef={DivRef} setInput={setInput} input={input}/>
+      <Footer setShowFileUploader={setShowFileUploader} showFileUploader={showFileUploader} openEmoji={openEmoji} SetOpenEmoji={SetOpenEmoji} DivRef={DivRef} setInput={setInput} input={input}/>
       </div>
       <div style={{heigt:"0px"}}></div>
     </div>
