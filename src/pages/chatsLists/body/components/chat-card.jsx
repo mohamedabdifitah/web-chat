@@ -12,7 +12,7 @@ const ChatCard = () => {
     navigate.push(path)
   }
   return (
-    <div onClick={() => Navigate("/hello")} className="card-container border-bottom">
+    <div  className="card-container border-bottom">
       <NavLink to={"/settings"} component="div" className="outline-card "   >
         <div >
           <ChatAvatar/>
@@ -35,9 +35,10 @@ const ChatCard = () => {
               </span>
           
               <CustomBadge count={1} className={"badge-primary"} />
-              <span className="chat-icon dropdown" >
+              {/* <span className="chat-icon dropdown" onClick={(e) =>{if(e.target == e.target) alert("hello world");}}>
                 <CustomIcon name={"dropdown"}/>
-              </span>
+              </span> */}
+              
 
             </div>
           </div>

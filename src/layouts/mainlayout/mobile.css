@@ -1,0 +1,36 @@
+.mobile-layout{
+  position:absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.mobile-body{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  background-color:#121f26;
+}
+.floating-icons{
+  position: absolute;
+  background-color: white;
+  width: 50%;
+  z-index: 1;
+  left: 50%;
+  top: 62%;
+  height: 30%;
+  align-items: center;
+  display:flex;
+  justify-content: center;
+
+}
+header{
+  position:relative;
+  width: 100%;
+  height: 15%;
+  /* background-color: #222e37; */
+  background-color: #1e2123;
+}

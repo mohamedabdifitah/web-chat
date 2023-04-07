@@ -38,15 +38,18 @@
   border-radius: 9px 9px 0px;
   height: 66px;
 }  
-.outline-card:hover{
-  // content: attr(data-tooltip);
-  .dropdown{
-    display: "flex";
+// .outline-card:hover{
+//   // content: attr(data-tooltip);
+//   .dropdown{
+//     display: "flex";
     
-  }
+//   }
+// }
+.outline-card:hover .dropdown{
+  visibility: visible;
 }
 .dropdown{
-  display: none;
+  visibility: hidden;
 }
 
 .text-holder{

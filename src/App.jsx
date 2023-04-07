@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import './App.css'
+
+
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import MainLayout from './layouts/mainlayout/mainlayout'
 import ChatPage from './pages/chatPage/chat';
 import ConversionChats from './pages/chatsLists';
 import SettingPage from './pages/settingsPage/settings';
 import NewChatPage from './pages/NewPage';
+import MobileMainLayout from './layouts/mainlayout/mobileLayout';
 
 function App() {
   
@@ -13,6 +16,8 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+      {/* <BrowserView> */}
+
         <Routes>
           {/* chat group Routes */}
           <Route path="/" element={
@@ -40,7 +45,7 @@ function App() {
 
           </Route>
         </Routes>
-      
+        {/* </BrowserView> */}
       </div>
     </BrowserRouter>
   )
