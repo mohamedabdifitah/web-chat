@@ -41,6 +41,9 @@ const ChatPageBody = () => {
 
     }
   }
+  useEffect(()=>{
+    OnScrollToBottom()
+  },[])
   return (
     <div className="chat-body">
       
