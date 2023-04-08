@@ -25,7 +25,6 @@
 .outline-card{
   position: relative;
   text-decoration: none;
-  background: var(--outline-card-active);
   width: 100%;
   gap: 10px;
   cursor: pointer;
@@ -37,7 +36,11 @@
   /* border-radius: 9px; */
   border-radius: 9px 9px 0px;
   height: 66px;
-}  
+} 
+.card-active{
+  
+  background: var(--outline-card-active);
+}
 // .outline-card:hover{
 //   // content: attr(data-tooltip);
 //   .dropdown{

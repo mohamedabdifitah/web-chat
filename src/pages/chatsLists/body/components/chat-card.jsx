@@ -13,7 +13,12 @@ const ChatCard = () => {
   }
   return (
     <div  className="card-container border-bottom">
-      <NavLink to={"/settings"} component="div" className="outline-card "   >
+      <NavLink to={"/"} component="div"
+      className={({ isActive }) =>
+      isActive ? "outline-card card-active" :"outline-card" 
+      } 
+      
+      >
         <div >
           <ChatAvatar/>
         </div>

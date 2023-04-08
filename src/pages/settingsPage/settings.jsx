@@ -1,24 +1,28 @@
 import React from "react";
 import "./settings.css"
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { CustomIcon } from "../../components/icons/custom-icons";
 import ProfileAvatar from "../../components/Avatar/avatar";
 const SettingPage = () => {
+  const navigate = useNavigate()
+  function Navigation(url){
+    navigate(url)
+  }
   return (
     <div className="settings blue border-right">
       <div className="setting-holder">
-        <div className="Avatar-holder">
+        <div className="Avatar-holder" onClick={() => {Navigation("profile")}}>
           <ProfileAvatar style={{
           width:"55px",
           height:"55px",
           borderRadius:"9px"
         }} />
         <div className={"title-desc"}>
-          <span className="title text" title={"Mohamed Abdifitah"}>
+          <span className="title text color-text" title={"Mohamed Abdifitah"}>
             Mohamed Abdifitah
           </span>
-          <span className="description text">
-            ❤️
+          <span className="description text color-text s-large">
+            Description of Your Profile
           </span>
         </div>
         </div>

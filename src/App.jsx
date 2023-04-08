@@ -7,8 +7,10 @@ import MainLayout from './layouts/mainlayout/mainlayout'
 import ChatPage from './pages/chatPage/chat';
 import ConversionChats from './pages/chatsLists';
 import SettingPage from './pages/settingsPage/settings';
+import NotFoundPage from './404';
 import NewChatPage from './pages/NewPage';
 import MobileMainLayout from './layouts/mainlayout/mobileLayout';
+import ProfilePage from './pages/profilePage';
 
 function App() {
   
@@ -33,6 +35,9 @@ function App() {
               <SettingPage/>
             </MainLayout>
           }>
+            <Route path='profile' element={
+              <ProfilePage />
+            } />
 
           </Route>
             {/* settings group Routes */}
@@ -44,7 +49,10 @@ function App() {
           }>
 
           </Route>
+          <Route path="*" element={<NotFoundPage />}/> 
         </Routes>
+        
+
         {/* </BrowserView> */}
       </div>
     </BrowserRouter>

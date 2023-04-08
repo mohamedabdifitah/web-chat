@@ -110,3 +110,14 @@
   overflow: hidden;
   
 }
+.error-page{
+  min-height: 100vh;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--color);
+  perspective: 1200px;
+}
