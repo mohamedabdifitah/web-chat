@@ -29,12 +29,12 @@ export default function AccountMenu() {
         <button className='button-footer button-normal' >
           <BiSearchAlt2 />
         </button>
-        <button className='button-footer button-normal' >
+        {/* <button className='button-footer button-normal' >
           <MdCall/>
         </button>
         <button className='button-footer button-normal' >
           <FiVideo  />
-        </button>
+        </button> */}
       
         
         <Tooltip title="Account settings">

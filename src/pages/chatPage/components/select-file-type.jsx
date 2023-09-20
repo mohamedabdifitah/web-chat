@@ -34,9 +34,9 @@ export default function SelectFileTypeComp(props) {
       <div className="select-type-container">
       <ul>
         <li>
-        <Tooltip title="Add" placement="right">
+        <Tooltip title="poll" placement="right">
 
-          <button className='btn-select'>
+          <button className='btn-select' onClick={()=>{console.log("hello")}}>
             <span>
               <CustomIcon name={"poll"}  />
             </span>
@@ -44,39 +44,41 @@ export default function SelectFileTypeComp(props) {
           </Tooltip>
         </li>
         <li>
+        <Tooltip title="contact" placement="right">
           <button className='btn-select'>
             <span>
               <CustomIcon name={"contact"}  />
             </span>
           </button>
+          </Tooltip>
         </li>
         <li>
+
+        <Tooltip title="document" placement="right">
           <button className='btn-select'>
             <span>
               <CustomIcon name={"document"}  />
             </span>
           </button>
+          </Tooltip>
         </li>
         <li>
-          <button className='btn-select'>
-            <span>
-              <CustomIcon name={"camera"}  />
-            </span>
-          </button>
-        </li>
-        <li>
+        <Tooltip title="stickers" placement="right">
           <button className='btn-select'>
             <span>
               <CustomIcon name={"stickers"}  />
             </span>
           </button>
+          </Tooltip>
         </li>
         <li>
+        <Tooltip title="multimedia" placement="right">
           <button className='btn-select'>
             <span>
               <CustomIcon name={"multimedia"}  />
             </span>
           </button>
+          </Tooltip>
         </li>
       </ul>
     </div>

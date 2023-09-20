@@ -11,12 +11,18 @@ const SettingPage = () => {
   return (
     <div className="settings blue border-right">
       <div className="setting-holder">
-        <div className="Avatar-holder" onClick={() => {Navigation("profile")}}>
-          <ProfileAvatar style={{
-          width:"55px",
-          height:"55px",
-          borderRadius:"9px"
-        }} />
+        <NavLink to={"profile"} 
+          className={({ isActive }) =>
+            isActive ? "Avatar-holder setting-active" : "Avatar-holder"
+          }
+          >
+          <ProfileAvatar 
+            style={{
+              width:"55px",
+              height:"55px",
+              borderRadius:"9px"
+            }}
+          />
         <div className={"title-desc"}>
           <span className="title text color-text" title={"Mohamed Abdifitah"}>
             Mohamed Abdifitah
@@ -25,7 +31,7 @@ const SettingPage = () => {
             Description of Your Profile
           </span>
         </div>
-        </div>
+        </NavLink>
         <NavLink to={"theme"}>
           <span className="chat-icon">
             <CustomIcon name={"notification"}/>

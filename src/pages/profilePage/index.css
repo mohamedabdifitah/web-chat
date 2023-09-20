@@ -1,0 +1,71 @@
+.profile-page{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.button-profile{
+  outline: none;
+  border: none;
+}
+.upper-page{
+  padding:16px;
+  /* margin-top: 20px; */
+  /* background-color: aquamarine; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.profile-title{
+  color: var(--chats-name-on);
+  font-size: 25px;
+}
+.profile-phone{
+  color: var(--chats-name-off);
+  font-size :22px;
+}
+.profile-info{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.profile{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  /* top: 40px; */
+  /* left: 0px; */ 
+
+}
+.icons-holder-profile{
+  position: relative;
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.icons-holder-profile > button{
+  cursor: pointer;
+  
+}
+.profile img{
+  height: 100%;
+  width: 100%;
+  visibility: visible;
+  border-radius: 50%;
+  opacity: 5;
+  cursor: pointer;
+}
+.profile :hover{
+  background-color: grey;
+  opacity: 5;
+  /* visibility: hidden; */
+
+}

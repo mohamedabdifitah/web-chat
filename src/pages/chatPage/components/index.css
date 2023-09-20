@@ -23,11 +23,11 @@
   width: 100px;
   /* height: 328px; */
   /* top: 91px; */
-  left: 20%;
-  top: 71px;
+  left: 28%;
+  top: 106px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 15px;
   list-style: none;
   
 }

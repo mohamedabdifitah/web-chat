@@ -7,7 +7,7 @@ import LeftMessage from "./rows/leftMessage";
 import { CustomIcon } from "../../../components/icons/custom-icons";
 import CustomBadge from "../../../components/badge/badge";
 import CustomEmojiPicker from '../../../components/emoji-picker/emoji-picker';
-import { IconButton } from "@mui/material";
+import { IconButton, Modal } from "@mui/material";
 import SelectFileTypeComp from "../components/select-file-type";
 import { LeftMissedCallContainer , RightMissedCallContainer } from "./rows/call";
 // import Rows from "./rows";
@@ -41,6 +41,27 @@ const ChatPageBody = () => {
 
     }
   }
+  function CapturingHeightChange(){
+    if(ConPanelRef.current){
+      if(ConPanelRef.current.scrollTop == ConPanelRef.current.scrollHeight){
+        return true
+      }else{
+        return false
+      }
+
+    }
+  }
+  const [ LastRow , SetLastRow ] = useState(false)
+  useEffect(() => {
+    if(ConPanelRef.current.scrollTop === ConPanelRef.current.scrollHeight){
+      SetLastRow(true)
+      console.log(LastRow)
+    }else{
+      SetLastRow(false)
+      console.log(LastRow)
+      
+    }
+  },[ConPanelRef?.current?.scrollTop,ConPanelRef?.current?.scrollHeight])
   useEffect(()=>{
     OnScrollToBottom()
   },[])
@@ -50,7 +71,7 @@ const ChatPageBody = () => {
       <div className="copybale-area">
         {/*  one div is missing */}
         <div className="conversion-panel-messages"  >
-          <div className={"popup-area"}>
+          <div className={"popup-area"} >
             <div>
               <CustomEmojiPicker pickEmoji={pickEmoji} open={openEmoji} SetOpen={SetOpenEmoji} />
 
@@ -74,7 +95,7 @@ const ChatPageBody = () => {
             
           </div>
 
-          {scrollTop == scrollHeight?<div className="turn-to-bottom" onClick={() => OnScrollToBottom()}>
+          {LastRow?<div className="turn-to-bottom" onClick={() => OnScrollToBottom()}>
               <span className="chat-icon left-center  ">
                 <CustomIcon name={"dropdown"} style={{width:"20",height:"20",position:"relative"}} />
               </span>

@@ -22,7 +22,8 @@
   display: flex;
   gap: 14px;
 }
-.Avatar-holder:hover{
+.setting-active{
+  
   padding-left: 8px;
   background-color: var(--side-navigation-background);
 

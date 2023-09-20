@@ -57,6 +57,8 @@ body{
   /* --special-btn-selected :#fff3f1; */
   --special-btn-selected :#faefec;
   --chat-card-icons:#8696a0;
+  --svg-gray-button: #222e36;
+  --reactions-picker-bg:#667781;
   --date-sent-on-chats:#d4d8db; /* #8696a0* from whatsapp web /
   
   --badge-background:#eb7852 ; /* this is also good #f38064 */
@@ -72,8 +74,10 @@ body{
     --chats-name-on:#e3e5ff;
     --primary-icon-color:white;
     --primary-text:white;
+    --svg-gray-button: #222e36;
     --border-color:#454647;
     --missed-call-panel:#221e1c;
+    --reactions-picker-bg:#667781;
 
 
 
